@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sam {
+            padding:50px;
+            background-color: rgb(180, 114, 114);
+            border: 1px solid red;
+            transform: translate(-50%, 50%)
+
+        }
+
+        #par {
+            transition: all 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Button</button>
+
+    <p id="par">Je ne suis pas le seul à venir à l'heure</p>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var par = document.getElementById('par');
+        
+
+        btn.addEventListener('click', ()=> {
+            par.classList.toggle('sam');
+        })
+    </script>
+</body>
+</html>
